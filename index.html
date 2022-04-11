@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Online converter - from Decimal to Binary, Hexa and Octal</title>
+    <meta name="title" content="Online converter - from Decimal to Binary, Hexa and Octal">
+    <meta name="description" content="This online converter will help you to convert decimal number into Binary, Hexadecimal and Octal">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Online converter - from Decimal to Binary, Hexa and Octal">
+    <meta property="og:description" content="This online converter will help you to convert decimal number into Binary, Hexadecimal and Octal">
+    <meta property="og:image" content="https://aasisp.github.io/Online-Binary-Converter/img.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Online converter - from Decimal to Binary, Hexa and Octal">
+    <meta property="twitter:description" content="This online converter will help you to convert decimal number into Binary, Hexadecimal and Octal">
+    <meta property="twitter:image" content="https://aasisp.github.io/Online-Binary-Converter/img.png">
+	
+    <!-- Whatsapp img pic -->
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
+    <title>Convert Decimal to Binary, Hexadecimal & Octal number system</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" async></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header section start from here -->
+        <header id="header">
+            <img src="./logo.png" alt="">
+        </header>
+        <!-- This section is used display the output of Binary, Hexadecimal & Octal and take input from user -->
+        <section class="output">
+            <div class="screen p10">
+                <div class="output-screen">
+                    <div class="binary flex">
+                        <span class="b700">In Binary</span>
+                        <span id="binary-output"></span>
+                    </div>
+                    <div class="hexadecimal flex">
+                        <span class="b700">In Hexa</span>
+                        <span id="hexa-output"></span>
+                    </div>
+                    <div class="octal flex">
+                        <span class="b700">In Octal</span>
+                        <span id="octal-output"></span>
+                    </div>
+                </div>
+                <!-- The input field start from here -->
+                <!-- This section is used to take input from User -->
+                <div class="input-screen">
+                    <input type="text" id="user-input">
+                </div>
+            </div>
+        </section>
+        <!-- This keypad section start from here -->
+        <section class="keypad-sec">
+            <div class="keypad-copyright flex">
+                <div class="copyright">
+                    <span>deployed by Aasis</span>
+                </div>
+                <div class="keypad">
+                    <div class="clear-delete flex">
+                        <span id="clr">Clear</span>
+                        <span id="delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M576 384C576 419.3 547.3 448 512 448H205.3C188.3 448 172 441.3 160 429.3L9.372 278.6C3.371 272.6 0 264.5 0 256C0 247.5 3.372 239.4 9.372 233.4L160 82.75C172 70.74 188.3 64 205.3 64H512C547.3 64 576 92.65 576 128V384zM271 208.1L318.1 256L271 303C261.7 312.4 261.7 327.6 271 336.1C280.4 346.3 295.6 346.3 304.1 336.1L352 289.9L399 336.1C408.4 346.3 423.6 346.3 432.1 336.1C442.3 327.6 442.3 312.4 432.1 303L385.9 256L432.1 208.1C442.3 199.6 442.3 184.4 432.1 175C423.6 165.7 408.4 165.7 399 175L352 222.1L304.1 175C295.6 165.7 280.4 165.7 271 175C261.7 184.4 261.7 199.6 271 208.1V208.1z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="number-pad">
+                        <div class="row flex">
+                            <input type="button" value="7" class="num-key">
+                            <input type="button" value="8" class="num-key">
+                            <input type="button" value="9" class="num-key">
+                        </div>
+                        <div class="row flex">
+                            <input type="button" value="4" class="num-key">
+                            <input type="button" value="5" class="num-key">
+                            <input type="button" value="6" class="num-key">
+                        </div>
+                        <div class="row flex">
+                            <input type="button" value="1" class="num-key">
+                            <input type="button" value="2" class="num-key">
+                            <input type="button" value="3" class="num-key">
+                        </div>
+                        <div class="row flex ">
+                            <input type="button" value="0" class="num-key">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189314112-4"></script>
+    <script async>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-189314112-4');
+    </script>
+</body>
+
+</html>

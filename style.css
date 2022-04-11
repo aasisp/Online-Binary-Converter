@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: ubuntu;
+    box-sizing: border-box;
+    transition: 0.3s ease-in;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.screen {
+    padding: 10px 10px 0 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.b700 {
+    font-weight: 700;
+}
+
+.keypad-copyright {
+    height: 460px;
+}
+
+.binary, .hexadecimal {
+    padding-bottom: 10px;
+}
+
+/* Input field style start here.  */
+input {
+    border: none;
+    outline: none;
+    text-align: end;
+    width: 100%;
+}
+
+.input-screen {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+}
+/* Input field style end here.  */
+
+/* Keypad style start here.  */
+.keypad {
+    width: 100%;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+/* clear and delete button style start here.  */
+#clr {
+    color:red;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.123);
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: 2px;
+}
+
+.clear-delete {
+    padding-bottom: 10px;
+}
+
+#clr:active {
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+#delete>svg {
+    height: 30px;
+}
+/* clear and delete button style end here.  */
+
+/* Number keypad style start here.  */
+.num-key{
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.089);
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
+    font-weight: 400;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.num-key:active {
+    transition: 0.3s ease-out;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+.row:nth-child(4) {
+    justify-content: center;
+}
+
+.row:nth-last-child(2){
+    padding-top: 20px;
+}
+
+.row:nth-last-child(1){
+    padding-top: 20px;
+}
+.row:nth-last-child(3){
+    padding-top: 20px;
+}
+/* Number keypad style end here.  */
+
+/* Copyright tag style start here.  */
+.copyright {
+    writing-mode: vertical-lr;
+    margin-right: 5px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+}
+
+.copyright span {
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+/* Copyright tag style end here.  */
