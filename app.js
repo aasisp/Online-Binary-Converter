@@ -1,19 +1,19 @@
-// Following function is used to occupy blank space of screen
-const userAgent = document.getElementById("header");
+// Following function is use to occupy blank space of screen
+const screen = document.getElementById("header");
 (function () {
     if(window.innerWidth > 450)
         document.getElementsByTagName("body")[0].innerHTML = `<center style="padding-top: 20%;"><h2 class="b700">Please! Visit the site using mobile.</h2>`;
     else{
         let deviceWidth = (window.innerHeight - 460) - 186.199;
         if(deviceWidth < 90){
-            userAgent.style.display = "none";
+            screen.style.display = "none";
         }else {
-            userAgent.style.height = (window.innerHeight - 460) - 186.199 + "px";
+            screen.style.height = (window.innerHeight - 460) - 186.199 + "px";
         }
     }
 })();
 
-// Following function is to perform Binary calculation.
+// Following function is to perform Binary conversion.
 const binaryCalculation = (input) => {
     let result = new Array(), remainder, division, counter = 0, finalResult;
     while (input > 0) {
@@ -34,7 +34,7 @@ const binaryCalculation = (input) => {
     return finalResult;
 }
 
-// Following function is to perform Hexadecimal calculation.
+// Following function is to perform Hexadecimal conversion.
 const hexaCalculation = (input) => {
     let result = new Array(), remainder, division, counter = 0, finalResult;
     while (input > 0) {
@@ -69,7 +69,7 @@ const hexaCalculation = (input) => {
     return finalResult;
 }
 
-// Following function is to perform Octal calculation.
+// Following function is to perform Octal conversion.
 const octalCalculation = (input) => {
     let result = new Array(), remainder, division, counter = 0, finalResult;
     while (input > 0) {
@@ -84,7 +84,7 @@ const octalCalculation = (input) => {
     return finalResult;
 }
 
-// DOM's
+// Selection of elements
 let inputField = document.getElementById("user-input"),
     binaryOutput = document.getElementById("binary-output"),
     hexaOutput = document.getElementById("hexa-output"),
